@@ -42,7 +42,7 @@ async def test_mlflow_request_tags_functionality():
     }):
         # Now we can safely import MlflowLogger
         from litellm.integrations.mlflow import MlflowLogger
-        
+
         # Create MlflowLogger instance
         mlflow_logger = MlflowLogger()
         litellm.callbacks = [mlflow_logger]
